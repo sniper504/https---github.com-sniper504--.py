@@ -1,5 +1,5 @@
 input_data=open("input.txt","r")
-data=input_data.read()
+k=input_data.read()
 a=9
 b=int(9-k)
 k=int
