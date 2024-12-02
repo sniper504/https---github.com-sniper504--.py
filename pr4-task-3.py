@@ -1,8 +1,9 @@
 input_data=open("input.txt","r")
-a=input_data.read()
-b=25
-a=str(int(a)*(a))+str(b)
+data=input_data.read()
+data=data.split()
+b=int(data[0])
+a=b**2
 output_data=open("output.txt","w")
-output_data.write(a)
+output_data.write(str(a))
 input_data.close()
 output_data.close()
