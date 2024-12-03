@@ -6,7 +6,7 @@ def add(a,b):
     c=float(a)+float(b)
     return(c)
 def subtract(a,b):
-    c=float(a)-float(b)
+    c=float(a)-(b)
     return(c)
 def divide(a,b):
     c=float(a)/float(b)
@@ -24,7 +24,7 @@ if '-' in user_input:
         print(number_list)
         result = (number_list[0])
         for i in range(1,len(number_list)):
-                number_list[i] = float(number_list[i])
+                number_list[i] = (number_list[i])
                 result =(subtract(result,number_list[i]))
 elif '+' in user_input:
         number_list=user_input.split("+")
