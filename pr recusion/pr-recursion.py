@@ -12,15 +12,15 @@ def fibonachi(N):
         return 1
     return fibonachi(int(N) - 1) + fibonachi(int(N) - 2)
 def sum_diligits(N):
-    if N ==0:
-        return 0
-    if len(N)==0:
-        return N
-    if 
-        return sum_diligits() + 
+    if len(N) ==1:
+        return int(N)
+    if len(N)>1:
+        return int(N[0]) + sum_diligits(N[1:])
 print("введите число")
 user_input=input()
 result_fac=factorial(user_input)
 print("Факториал вашего числа равен",result_fac)
 result_fib=fibonachi(user_input)
 print("номер элемента вашего числа в ряде Фибоначи:",result_fib)
+result_sum=sum_diligits(user_input)
+print("сумма цифр числа рвна",result_sum)
