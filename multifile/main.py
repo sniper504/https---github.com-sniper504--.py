@@ -1,4 +1,4 @@
-import circle  as circ
+import new_folder.circle  as circ
 import is_even  as even
 import sum_diligits  as dil
 import temperature  as temp
